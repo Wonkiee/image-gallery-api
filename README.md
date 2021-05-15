@@ -1,8 +1,10 @@
 # image-gallery-api
 
 Technologies Used:
-Node Version - v10.24.1.
-DB - mongoDB.
+`Node Version - v10.24.1.`
+`DB - mongoDB - 4.2.11`
+
+This is the API implementation of the image gallery product.
 
 How to Build the Project.
 
