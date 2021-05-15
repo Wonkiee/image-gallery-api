@@ -1,0 +1,12 @@
+{
+	"db": {
+		"connection": "mongodb://localhost:27017/image_server"
+	},
+	"logger": {
+		"file_path": "/var/logs/image-gallery-api.log",
+		"filename": "image-gallery-api.log",
+		"frequency": 1,
+		"level": "info"
+	},
+	"image_server": "https://dev-pb-apps.s3-eu-west-1.amazonaws.com/collection/CHhASmTpKjaHyAsSaauThRqMMjWanYkQ.json"
+}
