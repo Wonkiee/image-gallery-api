@@ -48,7 +48,6 @@ router.post('/saveUserImages', (req, res) => {
 
 router.patch('/updateUserImages/:id', (req, res) => {
   logger.info("Request recieved to update user images");
-  const reqBody = req.body;
   if (!req.params.id) {
     logger.error("User id not provided");
     return handleWrapperResponse(res, constants.ERRORS.USER_ID_NOT_PROVIDED,
