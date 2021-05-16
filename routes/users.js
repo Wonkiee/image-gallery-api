@@ -46,15 +46,15 @@ router.post('/saveUserImages', (req, res) => {
 });
 
 
-router.patch('/updateUserImages', (req, res) => {
+router.patch('/updateUserImages/:id', (req, res) => {
   logger.info("Request recieved to update user images");
   const reqBody = req.body;
-  if (!reqBody.userId) {
+  if (!req.params.id) {
     logger.error("User id not provided");
     return handleWrapperResponse(res, constants.ERRORS.USER_ID_NOT_PROVIDED,
       constants.RESPONSE_CODES.ERROR.BAD_REQUEST);
   }
-  return ImageFetchService.updateImageDetailsForAUser(reqBody.userId, req.body, (err, response) => {
+  return ImageFetchService.updateImageDetailsForAUser(req.params.id, req.body, (err, response) => {
     if (err) {
       return handleWrapperResponse(res, err, constants.RESPONSE_CODES.ERROR.INTERNAL_SERVER_ERROR);
     }
