@@ -14,3 +14,6 @@ How to Build the Project.
 2) If the log file directory is needed to be changed, you can change it from the config file (`default.json`)
 3) run `npm install`
 4) Then run `npm start`
+
+If you're running this in the local environment, hit the health end point and see whether the app is running.
+`http://localhost:3201/health`
