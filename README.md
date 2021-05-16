@@ -6,8 +6,9 @@ Technologies Used:
 
 This is the API implementation of the image gallery product.
 
-How to Build the Project.
+How to Build the Project. 
 
+`Checkout to master branch and then follow the steps`
 1) Place the configuration file like below.
   `/etc/image-gallery/image-gallery-api/default.json`
   Working config file is in the repository. (`resources/default.json`)
